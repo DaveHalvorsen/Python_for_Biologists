@@ -20,7 +20,7 @@ for line in all_lines:
     #organism that is being searched for, the list's third element [2] will be printed.
     #The csv file doesn't have a header, so I assumed that the third elements were the genes
     #because nothing else seemed to fit the required description. 
-    if split_line[0].startswith('Drosophila melanogaster'):
+    if split_line[0].startswith('Drosophila melanogaster') or split_line[0].startswith('Drosophila simulans'):
         print ("One gene name for " + split_line[0] + " is " + split_line[2])
 
     
